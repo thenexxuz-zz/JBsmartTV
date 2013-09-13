@@ -6,15 +6,5 @@
 		    <link>http://videocdn-us.geocdn.scaleengine.net/jblive-iphone/live/jblive.stream/playlist.m3u8|COMPONENT=HLS</link>
 		    <description>hls stream</description>
 	    </item>
-	    <item>
-		    <title>EWTN Live Stream - HAS</title>
-		    <link>http://www.ewtn.com/Live/unicorn/smil/ukirlnmulti_hls.xml|COMPONENT=HAS</link>   
-		    <description>EWTN Live stream - HAS</description>
-	    </item>
-	    <item>
-		    <title>EWTN Live Stream - HLS</title>
-		    <link>http://www.ewtn.com/Live/unicorn/smil/ukirlnmulti_hls.xml|COMPONENT=HLS</link>   
-		    <description>EWTN Live stream - HLS</description>
-	    </item>
     </channel>
 </rss>
