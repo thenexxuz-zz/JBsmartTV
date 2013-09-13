@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget>
+	<previewjs>JupiterBroadcasting</previewjs>
+	<preicon></preicon>
+	<cpname></cpname>
+	<cplogo></cplogo>
+	<cpauthjs></cpauthjs>
+	<ver>0.13</ver>
+	<mgrver></mgrver>
+	<fullwidget>y</fullwidget>
+	<srcctl>n</srcctl>
+	<ticker>n</ticker>
+	<childlock>n</childlock>
+	<audiomute>n</audiomute>
+	<videomute>n</videomute>
+	<dcont>y</dcont>
+	<!--type>user</type-->
+	<widgetname>Jupiter Broadcasting</widgetname>
+	<description>View all content from the Jupiter Broadcasting Team. http://jupiterbroadcasting.com</description>
+	<width>960</width>
+	<height>540</height>
+	<email>smart.tv@williampenton.com</email>
+	<author>
+		<name>William Penton</name>
+		<email>smart.tv@williampenton.com</email>
+		<link>http://williampenton.com</link>
+		<organization>Nexxuz</organization>
+	</author>
+</widget>
