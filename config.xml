@@ -1,29 +1,34 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<widget>
-	<previewjs>JupiterBroadcasting</previewjs>
-	<preicon></preicon>
-	<cpname></cpname>
-	<cplogo></cplogo>
-	<cpauthjs></cpauthjs>
-	<ver>0.13</ver>
-	<mgrver></mgrver>
-	<fullwidget>y</fullwidget>
-	<srcctl>n</srcctl>
-	<ticker>n</ticker>
-	<childlock>n</childlock>
-	<audiomute>n</audiomute>
-	<videomute>n</videomute>
-	<dcont>y</dcont>
-	<!--type>user</type-->
-	<widgetname>Jupiter Broadcasting</widgetname>
-	<description>View all content from the Jupiter Broadcasting Team. http://jupiterbroadcasting.com</description>
-	<width>960</width>
-	<height>540</height>
-	<email>smart.tv@williampenton.com</email>
-	<author>
-		<name>William Penton</name>
-		<email>smart.tv@williampenton.com</email>
-		<link>http://williampenton.com</link>
-		<organization>Nexxuz</organization>
-	</author>
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns='http://www.samsung.com/'>
+    <author itemtype="group">
+        <name itemtype="string">William Penton</name>
+        <email itemtype="string">smart.tv@williampenton.com</email>
+        <link itemtype="string">http://williampenton.com</link>
+        <organization itemtype="string">Nexxuz</organization>
+    </author>
+	<previewjs itemtype="string">JupiterBroadcasting</previewjs>
+    <preicon itemtype="string"></preicon>
+    <cpname itemtype="string"></cpname>
+    <cplogo itemtype="string"></cplogo>
+    <cpauthjs itemtype="string"></cpauthjs>
+    <ver itemtype="string">0.13</ver>
+    <mgrver itemtype="string"></mgrver>
+    <fullwidget itemtype="boolean">y</fullwidget>
+    <srcctl itemtype="boolean">n</srcctl>
+    <ticker itemtype="boolean">n</ticker>
+    <childlock itemtype="boolean">n</childlock>
+    <audiomute itemtype="boolean">n</audiomute>
+    <videomute itemtype="boolean">n</videomute>
+    <dcont itemtype="boolean">y</dcont>
+    <!--type>user</type-->
+    <widgetname itemtype="string">Jupiter Broadcasting SmartTV</widgetname>
+    <description itemtype="string">View all content from the Jupiter Broadcasting Team. http://jupiterbroadcasting.com</description>
+    <width itemtype="string">960</width>
+    <height itemtype="string">540</height>
+    <category itemtype="string">Videos</category>
+	<autoUpdate itemtype="boolean">y</autoUpdate>
+	<BigThumbIcon itemtype="string">icon/JupiterBroadcasting.png</BigThumbIcon>
+	<BigListIcon itemtype="string">icon/JupiterBroadcasting.png</BigListIcon>
+	<ThumbIcon itemtype="string">icon/JupiterBroadcasting.png</ThumbIcon>
+	<ListIcon itemtype="string">icon/JupiterBroadcasting.png</ListIcon>
 </widget>

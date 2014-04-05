@@ -4,6 +4,8 @@ var Server =
     dataReceivedCallback : null,
     
     XHRObj : null,
+    //url : "http://www.jupiterbroadcasting.com/feeds/FauxShowMP3.xml"
+    //url : "http://feeds2.feedburner.com/AllJupiterVideos?format=xml"
     url : "XML/videoList.xml"
 };
 
@@ -75,6 +77,10 @@ Server.createVideoList = function()
                 var titleElement = items[index].getElementsByTagName("title")[0];
                 var descriptionElement = items[index].getElementsByTagName("description")[0];
                 var linkElement = items[index].getElementsByTagName("link")[0];
+                //var linkElement = items[index].getElementsByTagName("enclosure")[0].getAttribute('url')+"|COMPONENT=HLS";
+                //linkElement = linkElement.replace('www.podtrac.com/pts/redirect.mp4/', '');
+                
+                alert(linkElement);
                 
                 if (titleElement && descriptionElement && linkElement)
                 {

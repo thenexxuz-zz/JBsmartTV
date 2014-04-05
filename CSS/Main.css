@@ -29,11 +29,16 @@ body
 	top: 0px;
 	height: 35px;
 	width: 100%;
-    background-image: url("../Images/BgLogo.png");
+    /*background-image: url("../Images/BgLogo.png");*/
     background-repeat:repeat-x;
     font-size:25px;
     padding-top:3px;
     padding-left:20px;
+}
+
+#logo img
+{
+	height: 55px;
 }
 
 /* Right Half */
@@ -102,7 +107,7 @@ body
 #timeInfo
 {
     position:absolute;
-    left:408px; top:4px;
+    left:8px; top:4px;
     width:60px; height:16px;
     
     text-align:center;

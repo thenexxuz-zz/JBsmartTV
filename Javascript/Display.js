@@ -38,8 +38,6 @@ Display.setTime = function(time)
     var timeHour = 0; var timeMinute = 0; var timeSecond = 0;
     var totalTimeHour = 0; var totalTimeMinute = 0; var totalTimeSecond = 0;
     
-    document.getElementById("progressBar").style.width = timePercent + "%";
-    
     if(Player.state == Player.PLAYING)
     {
         totalTimeHour = Math.floor(this.totalTime/3600000);
