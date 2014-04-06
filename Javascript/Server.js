@@ -5,8 +5,8 @@ var Server =
     
     XHRObj : null,
     //url : "http://www.jupiterbroadcasting.com/feeds/FauxShowMP3.xml"
-    //url : "http://feeds2.feedburner.com/AllJupiterVideos?format=xml"
-    url : "XML/videoList.xml"
+    url : "http://feeds2.feedburner.com/AllJupiterVideos?format=xml"
+    //url : "XML/videoList.xml"
 };
 
 Server.init = function()
@@ -76,16 +76,15 @@ Server.createVideoList = function()
             {
                 var titleElement = items[index].getElementsByTagName("title")[0];
                 var descriptionElement = items[index].getElementsByTagName("description")[0];
-                var linkElement = items[index].getElementsByTagName("link")[0];
-                //var linkElement = items[index].getElementsByTagName("enclosure")[0].getAttribute('url')+"|COMPONENT=HLS";
-                //linkElement = linkElement.replace('www.podtrac.com/pts/redirect.mp4/', '');
+                //var linkElement = items[index].getElementsByTagName("link")[0];
+                var enclosureElement = items[index].getElementsByTagName("enclosure")[0];
                 
-                alert(linkElement);
-                
-                if (titleElement && descriptionElement && linkElement)
+                if (titleElement && descriptionElement && enclosureElement)
                 {
                     videoNames[index] = titleElement.firstChild.data;
-                    videoURLs[index] = linkElement.firstChild.data;
+                    videoURL = enclosureElement.getAttribute('url');
+                    videoURL = videoURL.replace('www.podtrac.com/pts/redirect.mp4/', '');
+                    videoURLs[index] = videoURL; 
                     videoDescriptions[index] = descriptionElement.firstChild.data;
                 }
             }
