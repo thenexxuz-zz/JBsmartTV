@@ -4,7 +4,6 @@ var Server =
     dataReceivedCallback : null,
     
     XHRObj : null,
-    //url : "http://www.jupiterbroadcasting.com/feeds/FauxShowMP3.xml"
     url : "http://feeds2.feedburner.com/AllJupiterVideos?format=xml"
     //url : "XML/videoList.xml"
 };
@@ -71,6 +70,11 @@ Server.createVideoList = function()
             var videoNames = [ ];
             var videoURLs = [ ];
             var videoDescriptions = [ ];
+  
+            //Add Live stream Link
+            videoNames[0] = "Jupiter Broadcasting";
+            videoURLs[0] = "http://videocdn-us.geocdn.scaleengine.net/jblive-iphone/live/jblive.stream/playlist.m3u8|COMPONENT=HLS";
+            videoDescriptions[0] = "JB Live Stream"
             
             for (var index = 0; index < items.length; index++)
             {
@@ -81,11 +85,11 @@ Server.createVideoList = function()
                 
                 if (titleElement && descriptionElement && enclosureElement)
                 {
-                    videoNames[index] = titleElement.firstChild.data;
+                    videoNames[index+1] = titleElement.firstChild.data;
                     videoURL = enclosureElement.getAttribute('url');
                     videoURL = videoURL.replace('www.podtrac.com/pts/redirect.mp4/', '');
-                    videoURLs[index] = videoURL; 
-                    videoDescriptions[index] = descriptionElement.firstChild.data;
+                    videoURLs[index+1] = videoURL; 
+                    videoDescriptions[index+1] = descriptionElement.firstChild.data;
                 }
             }
         
