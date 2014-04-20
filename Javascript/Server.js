@@ -73,7 +73,7 @@ Server.createVideoList = function()
   
             //Add Live stream Link
             videoNames[0] = "Jupiter Broadcasting";
-            videoURLs[0] = "http://videocdn-us.geocdn.scaleengine.net/jblive-iphone/live/jblive.stream/playlist.m3u8|COMPONENT=HLS";
+            videoURLs[0] = "http://jblive.videocdn.scaleengine.net/jb-live/play/jblive.stream/playlist.m3u8|COMPONENT=HLS";
             videoDescriptions[0] = "JB Live Stream"
             
             for (var index = 0; index < items.length; index++)
@@ -85,7 +85,7 @@ Server.createVideoList = function()
                 
                 if (titleElement && descriptionElement && enclosureElement)
                 {
-                    videoNames[index+1] = titleElement.firstChild.data;
+                    videoNames[index+1] = '<div class="showTitle">' + ((titleElement.firstChild.data).replace(' | ', '</div><div class="showName">'))+'</div>';
                     videoURL = enclosureElement.getAttribute('url');
                     videoURL = videoURL.replace('www.podtrac.com/pts/redirect.mp4/', '');
                     videoURLs[index+1] = videoURL; 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<widget xmlns='http://www.samsung.com/'>
+<widget>
     <author itemtype="group">
         <name itemtype="string">William Penton</name>
         <email itemtype="string">smart.tv@williampenton.com</email>
@@ -11,7 +11,7 @@
     <cpname itemtype="string"></cpname>
     <cplogo itemtype="string"></cplogo>
     <cpauthjs itemtype="string"></cpauthjs>
-    <ver itemtype="string">0.13</ver>
+    <ver itemtype="string">0.22</ver>
     <mgrver itemtype="string"></mgrver>
     <fullwidget itemtype="boolean">y</fullwidget>
     <srcctl itemtype="boolean">n</srcctl>

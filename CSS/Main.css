@@ -109,7 +109,6 @@ body
     position:absolute;
     left:8px; top:4px;
     width:60px; height:16px;
-    
     text-align:center;
     font-size:12px;
 }
@@ -150,7 +149,6 @@ body
     position:absolute;
     left:168px; top:4px;
     width:32px; height:16px;
-    
     text-align:left;
     font-size:12px;
 }
@@ -212,7 +210,6 @@ body
     position:absolute;
     left:390px; top:28px;
     width: 98px; height:16px;
-    
     text-align:left;
     font-size:12px;
 }
@@ -238,9 +235,8 @@ body
     position:absolute;
     left:45px; top:400px;
     width:458px; height:80px;
-    
     text-align:left;
-    font-size:16px;
+    font-size:13px;
     overflow:hidden;
     text-overflow : ellipsis;
 }
@@ -259,6 +255,17 @@ body
     left:30px; top:55px; 
     width: 390px; height:430px;
     background-image:url("../Images/listBox/listBox.png");
+    text-align: center;
+}
+
+.showTitle
+{
+	font-size: 13px;
+}
+
+.showName
+{
+	font-size: 10px;
 }
 
 #video0
@@ -266,9 +273,8 @@ body
     position:absolute;
     left:30px; top:70px;
     width:330px; height:47px;
-    
     background-repeat:no-repeat; 
-    padding-left:20px;
+    padding-left:0px;
     padding-top:10px;
 }
 
@@ -277,9 +283,8 @@ body
     position:absolute;
     left:30px; top:130px;
     width:330px; height:47px;
-    
     background-repeat:no-repeat; 
-    padding-left:20px;
+    padding-left:0px;
     padding-top:10px;
 }
 
@@ -288,9 +293,8 @@ body
     position:absolute;
     left:30px; top:190px;
     width:330px; height:47px;
-    
     background-repeat:no-repeat; 
-    padding-left:20px;
+    padding-left:0px;
     padding-top:10px;
 }
 
@@ -299,9 +303,8 @@ body
     position:absolute;
     left:30px; top:250px;
     width:330px; height:47px;
-    
     background-repeat:no-repeat; 
-    padding-left:20px;
+    padding-left:0px;
     padding-top:10px;
 }
 
@@ -310,20 +313,18 @@ body
     position:absolute;
     left:30px; top:310px;
     width:330px; height:47px;
-    
     background-repeat:no-repeat; 
-    padding-left:20px;
+    padding-left:0px;
     padding-top:10px;
 }
 
 #videoCount
 {
     position:absolute;
-    left:330px; top:30px;
-    width:30px; height:20px;
-    
+    left:300px; top:30px;
+    width:50px; height:20px;
     text-align:left;
-    font-size:12px;
+    font-size:11px;
 }
 
 #previous
@@ -347,8 +348,6 @@ body
 .style_videoList
 {    
     color:#FFFFFF;
-    text-align:left;
-    font-size:20px;
 }
 
 #navi
