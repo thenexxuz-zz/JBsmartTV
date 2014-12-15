@@ -3,7 +3,7 @@
     <channel>
 	    <item>
 		    <title>Jupiter Broadcasting</title>
-		    <link>http://videocdn-us.geocdn.scaleengine.net/jblive-iphone/live/jblive.stream/playlist.m3u8|COMPONENT=HLS</link>
+		    <link>http://jblive.videocdn.scaleengine.net/jb-live/play/jblive.stream/playlist.m3u8|COMPONENT=HLS</link>
 		    <description>Live Stream</description>
 	    </item>
     </channel>
